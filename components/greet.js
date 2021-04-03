@@ -17,9 +17,9 @@ export default function Greet() {
   }
 
   return (
-    <h3 className="font-black text-xl sm:text-3xl md:text-4xl text-gray-800 dark:text-gray-200 font-heading leading-relaxed text-center uppercase">
+    <div className="font-black text-xl sm:text-3xl md:text-4xl text-gray-800 dark:text-gray-200 font-heading leading-relaxed text-center uppercase">
       <span>{randomGreeting.hello}, </span>
       <span>I am</span>
-    </h3>
+    </div>
   );
 }
