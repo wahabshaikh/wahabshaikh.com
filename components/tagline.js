@@ -28,7 +28,7 @@ export default function Tagline() {
         onClick={() => setCount((count + 1) % taglines.length)}
       >
         <svg
-          className="w-6 h-6"
+          className="w-6 h-6 animate-spin"
           fill="none"
           stroke="currentColor"
           viewBox="0 0 24 24"
