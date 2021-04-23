@@ -8,7 +8,7 @@ export default function handler(req, res) {
   if (req.method === "POST") {
     const { name, email, message } = JSON.parse(req.body);
     const data = {
-      from: `${name} <${email}>`,
+      from: `Wahab Shaikh <wahabshaikh@mg.wahabshaikh.me>`,
       to: "wahab.shaikh@somaiya.edu",
       subject: `Message from ${name} <${email}>`,
       text: `
