@@ -4,6 +4,28 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer components {
+  .wrapper {
+    @apply bg-white text-black dark:bg-black dark:text-white;
+  }
+
+  .container {
+    @apply flex flex-col justify-center items-center max-w-5xl mx-auto px-3;
+  }
+
+  .section {
+    @apply flex min-h-screen;
+  }
+
+  .section-alternate {
+    @apply bg-gray-200 dark:bg-gray-800;
+  }
+
+  .section-title {
+    @apply font-heading font-black text-5xl sm:text-7xl;
+  }
+}
+
 .label {
   @apply text-xs tracking-widest uppercase;
 }
