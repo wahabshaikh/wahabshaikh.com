@@ -4,7 +4,7 @@
 @tailwind components;
 @tailwind utilities;
 
-@layer components {
+@layer utilities {
   .wrapper {
     @apply bg-white text-black dark:bg-black dark:text-white;
   }
@@ -24,41 +24,45 @@
   .section-title {
     @apply font-heading font-black text-5xl sm:text-7xl;
   }
-}
 
-.label {
-  @apply text-xs tracking-widest uppercase;
-}
-
-.field {
-  @apply block w-full text-gray-900 rounded-[0.25rem] border-gray-500 shadow-sm;
-}
-
-form.pending {
-  @apply relative;
-}
-
-form.pending::before {
-  content: "";
-  @apply bg-gray-200 dark:bg-gray-800 rounded-[0.25rem] h-full w-full absolute top-0 left-0 opacity-80;
-}
-
-form.pending::after {
-  content: "";
-  background: radial-gradient(rgba(0, 50, 255, 0), rgba(0, 50, 255, 1));
-  top: calc(50% - 6rem);
-  left: calc(50% - 3rem);
-  animation: loading 1s infinite ease-out;
-  @apply h-24 w-24 rounded-full absolute;
-}
-
-@keyframes loading {
-  from {
-    opacity: 1;
-    transform: scale(0.001);
+  .label {
+    @apply text-xs tracking-widest uppercase;
   }
-  to {
-    opacity: 1;
-    transform: scale(1);
+
+  .field {
+    @apply block w-full rounded-[0.25rem] border-gray-500 shadow-sm text-gray-900;
+  }
+
+  .button {
+    @apply rounded-[0.25rem] shadow-sm py-2 font-bold bg-black text-white tracking-wide uppercase hover:opacity-90;
+  }
+
+  form.pending {
+    @apply relative;
+  }
+
+  form.pending::before {
+    content: "";
+    @apply bg-gray-200 dark:bg-gray-800 rounded-[0.25rem] h-full w-full absolute top-0 left-0 opacity-80;
+  }
+
+  form.pending::after {
+    content: "";
+    background: radial-gradient(rgba(0, 50, 255, 0), rgba(0, 50, 255, 1));
+    top: calc(50% - 6rem);
+    left: calc(50% - 3rem);
+    animation: loading 1s infinite ease-out;
+    @apply h-24 w-24 rounded-full absolute;
+  }
+
+  @keyframes loading {
+    from {
+      opacity: 1;
+      transform: scale(0.001);
+    }
+    to {
+      opacity: 1;
+      transform: scale(1);
+    }
   }
 }
