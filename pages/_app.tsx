@@ -1,8 +1,9 @@
 import { ThemeProvider } from "next-themes";
-import Layout from "../components/layout";
+import { AppProps } from "next/app";
+import Layout from "../components/Layout";
 import "../styles/globals.css";
 
-export default function App({ Component, pageProps }) {
+const CustomApp: React.FC<AppProps> = ({ Component, pageProps }) => {
   return (
     <ThemeProvider attribute="class">
       <Layout>
@@ -10,4 +11,6 @@ export default function App({ Component, pageProps }) {
       </Layout>
     </ThemeProvider>
   );
-}
+};
+
+export default CustomApp;

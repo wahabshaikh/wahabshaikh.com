@@ -1,20 +1,12 @@
-@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Montserrat:wght@400;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700;900&display=swap");
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 @layer utilities {
-  .wrapper {
-    @apply bg-white text-black dark:bg-black dark:text-white;
-  }
-
-  .container {
-    @apply flex flex-col justify-center items-center max-w-5xl mx-auto px-3;
-  }
-
   .section {
-    @apply flex min-h-screen;
+    @apply min-h-screen flex flex-col justify-center items-center;
   }
 
   .section-alternate {
@@ -22,7 +14,7 @@
   }
 
   .section-title {
-    @apply font-heading font-black text-5xl sm:text-7xl;
+    @apply font-black text-5xl sm:text-7xl text-center;
   }
 
   .label {

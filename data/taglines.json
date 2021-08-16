@@ -1,7 +1,19 @@
 [
-  { "emoji": "❤️", "text": "love to build things for the web" },
-  { "emoji": "🧭", "text": "am exploring the JAMstack" },
-  { "emoji": "🗣️", "text": "can talk about cricket all-day" },
-  { "emoji": "😍", "text": "admire Shah Rukh Khan" },
-  { "emoji": "💜", "text": "support the Kolkata Knight Riders" }
+  { "emoji": "😎", "text": "The Modern Web Developer" },
+  { "emoji": "❤️", "text": "And I love the JAMstack" },
+  {
+    "emoji": "🏗",
+    "text": "And I build type-safe React & GraphQL applications",
+    "conjunction": true
+  },
+  {
+    "emoji": "🏏",
+    "text": "And I can discuss cricket all-day",
+    "conjunction": true
+  },
+  {
+    "emoji": "💜",
+    "text": "And I am a Kolkata Knight Riders fan",
+    "conjunction": true
+  }
 ]

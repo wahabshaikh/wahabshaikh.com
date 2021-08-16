@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { useTheme } from "next-themes";
 import { MoonIcon, SunIcon } from "@heroicons/react/solid";
 
-export default function ToggleTheme() {
+const ThemeSwitcher: React.FC = () => {
   const [mounted, setMounted] = useState(false);
   const { theme, setTheme } = useTheme();
 
@@ -12,7 +12,7 @@ export default function ToggleTheme() {
 
   return (
     <button
-      aria-label="Toggle the theme"
+      aria-label={`Switch to ${theme === "dark" ? "light" : "dark"} mode`}
       type="button"
       onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
     >
@@ -23,4 +23,6 @@ export default function ToggleTheme() {
       )}
     </button>
   );
-}
+};
+
+export default ThemeSwitcher;

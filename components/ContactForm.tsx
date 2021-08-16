@@ -18,7 +18,7 @@ const reducer = (state, action) => {
   }
 };
 
-export default function Form() {
+const ContactForm: React.FC = () => {
   const [state, dispatch] = useReducer(reducer, INITIAL_STATE);
 
   const updateStatus = (status) =>
@@ -80,4 +80,6 @@ export default function Form() {
       </button>
     </form>
   );
-}
+};
+
+export default ContactForm;

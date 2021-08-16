@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { RefreshIcon } from "@heroicons/react/outline";
 import taglines from "../data/taglines.json";
 
-export default function Tagline() {
+const Tagline: React.FC = () => {
   const [tagline, setTagline] = useState(taglines[0]);
   const [count, setCount] = useState(0);
 
@@ -12,11 +12,11 @@ export default function Tagline() {
 
   return (
     <>
-      <h3 className="font-black text-xl sm:text-3xl md:text-4xl text-gray-800 dark:text-gray-200 font-heading leading-relaxed text-center uppercase my-3">
-        {`and I ${tagline.text}! ${tagline.emoji}`}
+      <h3 className="font-black text-xl sm:text-3xl md:text-4xl text-gray-800 dark:text-gray-200 leading-relaxed text-center uppercase my-3">
+        {`${tagline.text}! ${tagline.emoji}`}
       </h3>
       <button
-        aria-label="Change the tagline"
+        aria-label="Refresh tagline"
         type="button"
         onClick={() => setCount((count + 1) % taglines.length)}
       >
@@ -24,4 +24,6 @@ export default function Tagline() {
       </button>
     </>
   );
-}
+};
+
+export default Tagline;
