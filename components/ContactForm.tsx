@@ -59,7 +59,7 @@ const ContactForm: React.FC = () => {
 
   return (
     <form
-      className={`w-4/5 sm:w-1/2 flex flex-col justify-center space-y-3 ${
+      className={`w-4/5 sm:w-1/2 flex flex-col justify-center items space-y-3 ${
         state.status === "PENDING" && "pending"
       }`}
       onSubmit={handleSubmit}

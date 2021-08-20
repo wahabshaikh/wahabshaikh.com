@@ -2,18 +2,15 @@
   { "emoji": "😎", "text": "The Modern Web Developer" },
   { "emoji": "❤️", "text": "And I love the JAMstack" },
   {
-    "emoji": "🏗",
-    "text": "And I build type-safe React & GraphQL applications",
-    "conjunction": true
+    "emoji": "👷",
+    "text": "And I build type-safe React & GraphQL applications"
   },
   {
     "emoji": "🏏",
-    "text": "And I can discuss cricket all-day",
-    "conjunction": true
+    "text": "And I can discuss cricket all-day"
   },
   {
     "emoji": "💜",
-    "text": "And I am a Kolkata Knight Riders fan",
-    "conjunction": true
+    "text": "And I'm a huge fan of the Kolkata Knight Riders"
   }
 ]

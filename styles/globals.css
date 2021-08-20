@@ -6,7 +6,7 @@
 
 @layer utilities {
   .section {
-    @apply min-h-screen flex flex-col justify-center items-center;
+    @apply min-h-screen py-24;
   }
 
   .section-alternate {
