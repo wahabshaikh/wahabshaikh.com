@@ -1,5 +1,4 @@
 import Head from "next/head";
-import AboutMe from "../components/AboutMe";
 import ContactForm from "../components/ContactForm";
 import Container from "../components/Container";
 import Intro from "../components/Intro";
