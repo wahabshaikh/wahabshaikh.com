@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { RefreshIcon } from "@heroicons/react/outline";
+import { HiRefresh } from "react-icons/hi";
 import taglines from "../data/taglines.json";
 
 const Tagline: React.FC = () => {
@@ -20,7 +20,7 @@ const Tagline: React.FC = () => {
         type="button"
         onClick={() => setCount((count + 1) % taglines.length)}
       >
-        <RefreshIcon className="w-6 h-6 animate-spin" />
+        <HiRefresh className="w-6 h-6 animate-spin" />
       </button>
     </>
   );
