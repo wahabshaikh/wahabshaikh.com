@@ -17,6 +17,10 @@
     @apply font-black text-5xl sm:text-7xl text-center;
   }
 
+  .section-subtitle {
+    @apply mb-8 text-center sm:text-lg text-gray-700 dark:text-gray-300;
+  }
+
   .label {
     @apply text-xs tracking-widest uppercase;
   }
