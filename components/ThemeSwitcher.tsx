@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { useTheme } from "next-themes";
-import { MoonIcon, SunIcon } from "@heroicons/react/solid";
+import { HiMoon, HiSun } from "react-icons/hi";
 
 const ThemeSwitcher: React.FC = () => {
   const [mounted, setMounted] = useState(false);
@@ -17,9 +17,9 @@ const ThemeSwitcher: React.FC = () => {
       onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
     >
       {theme === "dark" ? (
-        <SunIcon className="w-6 h-6" />
+        <HiSun className="w-6 h-6" />
       ) : (
-        <MoonIcon className="w-6 h-6" />
+        <HiMoon className="w-6 h-6" />
       )}
     </button>
   );
