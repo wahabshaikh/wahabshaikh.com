@@ -9,6 +9,7 @@ const Home: React.FC = () => {
   return (
     <>
       <Head>
+        <meta name="trustpilot-one-time-domain-verification-id" content="65cbefc2-8c27-4ab0-87c4-92b2e898f3ab"/>
         <title>Wahab Shaikh</title>
       </Head>
 
