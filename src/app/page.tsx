@@ -7,12 +7,14 @@ export default function Home() {
       <Image
         src="/wahab-shaikh.jpg"
         alt="Wahab Shaikh"
-        className="rounded-full"
+        className="rounded-full animate-in fade-in zoom-in duration-500"
         height={192}
         width={192}
       />
-      <h1 className="text-5xl font-bold">Wahab Shaikh</h1>
-      <div className="space-y-2">
+      <h1 className="text-5xl font-bold animate-in fade-in duration-500">
+        Wahab Shaikh
+      </h1>
+      <div className="space-y-2 animate-in fade-in slide-in-from-bottom duration-500">
         <p className="text-xl font-semibold">
           Indie Maker • Freelance Developer
         </p>
@@ -21,7 +23,7 @@ export default function Home() {
           <span className="text-sm">🎂 December 14, 2000</span>
         </p>
       </div>
-      <ul className="flex items-center justify-center gap-4">
+      <ul className="flex items-center justify-center gap-4 animate-in fade-in slide-in-from-bottom duration-500">
         <li>
           <a
             href="https://twitter.com/iwahabshaikh"
